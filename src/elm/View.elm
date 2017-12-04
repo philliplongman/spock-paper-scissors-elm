@@ -7,14 +7,14 @@ import Msg exposing (Msg)
 -- import View.Choices as Choices
 import View.Header as Header
 -- import View.Messages as Messages
--- import View.Score as Score
+import View.Scoreboard as Scoreboard
 
 
 view : Model -> Html Msg
 view model =
   main_ [ attribute "role" "main" ]
     [ Header.view model
-    -- , Score.view model
+    , Scoreboard.view model
     -- , Messages.view model
     -- , Choices.view model
     ]

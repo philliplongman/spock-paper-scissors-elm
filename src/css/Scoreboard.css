@@ -1,0 +1,17 @@
+.Scoreboard {
+  background-color: #222000;
+  color: #ffffff;
+}
+
+.Scoreboard .scores {
+  align-items: center;
+  display: flex;
+  height: 80px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.Scoreboard .scores div {
+  flex-grow: 1;
+  font-size: 22px;
+}
