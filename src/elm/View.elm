@@ -16,5 +16,5 @@ view model =
     [ Header.view model
     , Scoreboard.view model
     , Messages.view model
-    , Choices.view model
+    , Choices.view
     ]

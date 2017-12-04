@@ -3,13 +3,12 @@ module View.Choices exposing (view)
 import Html exposing (Html, div, img)
 import Html.Attributes exposing (alt, class, src)
 import Html.Events exposing (onClick)
-import Model exposing (Model)
 import Msg exposing (..)
 import View.Asset exposing (image)
 
 
-view : Model -> Html Msg
-view model =
+view : Html Msg
+view =
   div [ class "Choices large" ]
     [ face "kirk"
     , face "spock"
@@ -20,5 +19,5 @@ view model =
 face : String -> Html Msg
 face name =
   div [ class "face" ]
-    [ img [ src (image name), alt name, onClick NoOp ] []
+    [ img [ src (image name), alt name, onClick (Choose name) ] []
     ]

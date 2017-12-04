@@ -1,4 +1,4 @@
 module Msg exposing (..)
 
 
-type Msg = NoOp
+type Msg = Choose String
