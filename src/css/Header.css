@@ -1,0 +1,47 @@
+.Header.small {
+  padding: 24px 24px 24px 10px;
+}
+
+.Header.medium {
+  padding: 44px 44px 44px 10px;
+}
+
+.Header.large {
+  padding: 124px 44px 44px 10px;
+}
+
+.Header.blue {
+  background-color: #5098c6;
+}
+
+.Header.yellow {
+  background-color: #b1cc47;
+}
+
+.Header.small img {
+  height: 16vw;
+}
+
+.Header.medium img,
+.Header.large img {
+  height: 90px;
+}
+
+.Header span {
+  color: #242424;
+  font-family: Final Frontier Oldstyle;
+  font-style: italic;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.Header.small span{
+  bottom: 3.7vw;
+  font-size: 10vw;
+}
+
+.Header.medium span,
+.Header.large span{
+  bottom: 24px;
+  font-size: 3.4em;
+}

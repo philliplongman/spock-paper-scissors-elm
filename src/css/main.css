@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Final Frontier Oldstyle";
+  src: url("/assets/fonts/finalold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Federation";
+  src: url("/assets/fonts/Federation.ttf") format("truetype");
+}
+
+body {
+  background-color: #808080;
+  font-family: Federation;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
