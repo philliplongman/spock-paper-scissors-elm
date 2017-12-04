@@ -5,6 +5,7 @@ import Html.Attributes exposing (alt, class, src)
 import Html.Events exposing (onClick)
 import Model exposing (Model)
 import Msg exposing (..)
+import View.Asset exposing (image)
 
 
 view : Model -> Html Msg
@@ -21,8 +22,3 @@ face name =
   div [ class "face" ]
     [ img [ src (image name), alt name, onClick NoOp ] []
     ]
-
-
-image : String -> String
-image name =
-  "assets/images/" ++ name ++ ".png"
