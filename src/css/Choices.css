@@ -1,0 +1,24 @@
+.Choices {
+  display: flex;
+  margin: auto;
+  max-width: 600px;
+}
+
+.Choices.small {
+  position: absolute !important;
+  bottom: 8vh;
+}
+
+.Choices.medium,
+.Choices.large {
+  margin-top: 80px;
+}
+
+.Choices .face {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.Choices .face img{
+  width: 100%;
+}

@@ -1,4 +1,5 @@
 import './css/main.css';
+import './css/Choices.css';
 import './css/Header.css';
 import './css/Messages.css';
 import './css/Scoreboard.css';

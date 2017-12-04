@@ -4,7 +4,7 @@ import Html exposing (Html, main_)
 import Html.Attributes exposing (attribute, class)
 import Model exposing (Model)
 import Msg exposing (Msg)
--- import View.Choices as Choices
+import View.Choices as Choices
 import View.Header as Header
 import View.Messages as Messages
 import View.Scoreboard as Scoreboard
@@ -16,5 +16,5 @@ view model =
     [ Header.view model
     , Scoreboard.view model
     , Messages.view model
-    -- , Choices.view model
+    , Choices.view model
     ]
