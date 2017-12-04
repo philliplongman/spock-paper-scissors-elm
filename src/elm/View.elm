@@ -6,7 +6,7 @@ import Model exposing (Model)
 import Msg exposing (Msg)
 -- import View.Choices as Choices
 import View.Header as Header
--- import View.Messages as Messages
+import View.Messages as Messages
 import View.Scoreboard as Scoreboard
 
 
@@ -15,6 +15,6 @@ view model =
   main_ [ attribute "role" "main" ]
     [ Header.view model
     , Scoreboard.view model
-    -- , Messages.view model
+    , Messages.view model
     -- , Choices.view model
     ]
