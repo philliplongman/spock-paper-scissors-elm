@@ -6,15 +6,20 @@ import Model exposing (Model)
 
 
 view : Model -> Html msg
-view { game, score } =
+view model =
   div [ class "Scoreboard" ]
     [ div [ class "scores" ]
-      [ div [] [ scoreText game.player score.player ]
-      , div [] [ scoreText game.computer score.computer ]
+      [ div [] [ text (playerScore model) ]
+      , div [] [ text (computerScore model) ]
       ]
     ]
 
 
-scoreText : String -> Int -> Html msg
-scoreText player score =
-  text (player ++ ": " ++ toString score)
+playerScore : Model -> String
+playerScore { game, playerScore } =
+  game.player ++ ": " ++ toString playerScore
+
+
+computerScore : Model -> String
+computerScore { game, computerScore } =
+  game.computer ++ ": " ++ toString computerScore
